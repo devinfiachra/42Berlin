@@ -1,26 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_numbers.c                                 :+:      :+:    :+:   */
+/*   ft_sqrt.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dduffy-m <dduffy-m@student.42berlin.d      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/08 16:50:30 by dduffy-m          #+#    #+#             */
-/*   Updated: 2023/11/08 16:52:16 by dduffy-m         ###   ########.fr       */
+/*   Created: 2023/11/09 15:05:43 by dduffy-m          #+#    #+#             */
+/*   Updated: 2023/11/09 15:16:28 by dduffy-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_putchar(char c);
-void	ft_print_numbers(void);
+int	ft_sqrt(int nb);
 
-void	ft_print_numbers(void)
+int	ft_sqrt(int nb)
 {
-	char	num;
+	int	i;
 
-	num = '0';
-	while (num <= '9')
+	i = 0;
+	if (nb < 1)
+		return (0);
+	while (i * i < 46341)
 	{
-		ft_putchar(num);
-		num++;
+		if ((i * i) == (nb))
+			return (i);
+		i++;
 	}
+	return (0);
 }

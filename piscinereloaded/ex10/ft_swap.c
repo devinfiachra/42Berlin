@@ -1,26 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_numbers.c                                 :+:      :+:    :+:   */
+/*   ft_swap.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dduffy-m <dduffy-m@student.42berlin.d      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/08 16:50:30 by dduffy-m          #+#    #+#             */
-/*   Updated: 2023/11/08 16:52:16 by dduffy-m         ###   ########.fr       */
+/*   Created: 2023/11/09 14:34:00 by dduffy-m          #+#    #+#             */
+/*   Updated: 2023/11/09 14:34:59 by dduffy-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_putchar(char c);
-void	ft_print_numbers(void);
+void	ft_swap(int *a, int *b);
 
-void	ft_print_numbers(void)
+void	ft_swap(int *a, int *b)
 {
-	char	num;
+	int	c;
 
-	num = '0';
-	while (num <= '9')
-	{
-		ft_putchar(num);
-		num++;
-	}
+	c = *a;
+	*a = *b;
+	*b = c;
 }

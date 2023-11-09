@@ -1,26 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_numbers.c                                 :+:      :+:    :+:   */
+/*   ft_ft.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dduffy-m <dduffy-m@student.42berlin.d      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/08 16:50:30 by dduffy-m          #+#    #+#             */
-/*   Updated: 2023/11/08 16:52:16 by dduffy-m         ###   ########.fr       */
+/*   Created: 2023/11/09 14:32:28 by dduffy-m          #+#    #+#             */
+/*   Updated: 2023/11/09 15:03:51 by dduffy-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_putchar(char c);
-void	ft_print_numbers(void);
+void	ft_ft(int *nbr);
 
-void	ft_print_numbers(void)
+void	ft_ft(int *nbr)
 {
-	char	num;
-
-	num = '0';
-	while (num <= '9')
-	{
-		ft_putchar(num);
-		num++;
-	}
+	nbr = 42;
 }

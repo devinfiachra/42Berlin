@@ -1,26 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_numbers.c                                 :+:      :+:    :+:   */
+/*   ft_iterative_factorial.c                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dduffy-m <dduffy-m@student.42berlin.d      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/08 16:50:30 by dduffy-m          #+#    #+#             */
-/*   Updated: 2023/11/08 16:52:16 by dduffy-m         ###   ########.fr       */
+/*   Created: 2023/11/09 14:38:07 by dduffy-m          #+#    #+#             */
+/*   Updated: 2023/11/09 14:43:25 by dduffy-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_putchar(char c);
-void	ft_print_numbers(void);
+int	ft_iterative_factorial(int nb);
 
-void	ft_print_numbers(void)
+int	ft_iterative_factorial(int nb)
 {
-	char	num;
+	int	total;
 
-	num = '0';
-	while (num <= '9')
+	total = 1;
+	if (nb < 1)
+		return (0);
+	while (nb > 0)
 	{
-		ft_putchar(num);
-		num++;
+		total *= nb;
+		nb--;
 	}
+	return (total);
 }

@@ -1,26 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_numbers.c                                 :+:      :+:    :+:   */
+/*   ft_recursive_factorial.c                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dduffy-m <dduffy-m@student.42berlin.d      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/08 16:50:30 by dduffy-m          #+#    #+#             */
-/*   Updated: 2023/11/08 16:52:16 by dduffy-m         ###   ########.fr       */
+/*   Created: 2023/11/09 14:44:27 by dduffy-m          #+#    #+#             */
+/*   Updated: 2023/11/09 15:02:22 by dduffy-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_putchar(char c);
-void	ft_print_numbers(void);
+int	ft_recursive_factorial(int nb);
 
-void	ft_print_numbers(void)
+int	ft_recursive_factorial(int nb)
 {
-	char	num;
-
-	num = '0';
-	while (num <= '9')
-	{
-		ft_putchar(num);
-		num++;
-	}
+	if (nb < 1)
+		return (0);
+	if (nb == 1)
+		return (1);
+	if (nb > 1)
+		return (nb * ft_recursive_factorial(nb - 1));
+	return (0);
 }
