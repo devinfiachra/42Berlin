@@ -6,7 +6,7 @@
 /*   By: dduffy-m <dduffy-m@student.42berlin.d      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/10 16:33:16 by dduffy-m          #+#    #+#             */
-/*   Updated: 2023/11/10 19:15:35 by dduffy-m         ###   ########.fr       */
+/*   Updated: 2023/11/10 19:58:43 by dduffy-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ int	main(int argc, char *argv[])
 			ft_putchar(argv[i][j]);
 			j++;
 		}
-		ft_putchar('\n')
+		ft_putchar('\n');
 		j = 0;
 		i++;
 	}
