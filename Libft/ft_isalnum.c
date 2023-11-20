@@ -6,13 +6,13 @@
 /*   By: dduffy-m <dduffy-m@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/15 16:34:10 by dduffy-m          #+#    #+#             */
-/*   Updated: 2023/11/15 16:39:51 by dduffy-m         ###   ########.fr       */
+/*   Updated: 2023/11/16 13:58:58 by dduffy-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isalnum(int c)
+int	ft_isalnum(int c)
 {
-    return (ft_isalpha(c) || ft_isdigit(c))
+	return ((ft_isalpha(c)) || (ft_isdigit(c)));
 }
