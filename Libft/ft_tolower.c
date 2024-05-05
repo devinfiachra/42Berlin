@@ -6,16 +6,15 @@
 /*   By: dduffy-m <dduffy-m@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 16:27:40 by dduffy-m          #+#    #+#             */
-/*   Updated: 2023/11/16 16:28:59 by dduffy-m         ###   ########.fr       */
+/*   Updated: 2024/05/05 17:03:29 by dduffy-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
 #include "libft.h"
 
-int	ft_tolower(int c)
+int	ft_tolower(int ch)
 {
-	if ((c >= 65) && (c <= 90))
+	if ((ch >= 65) && (ch <= 90))
 	{
 		ch = ch + 32;
 	}

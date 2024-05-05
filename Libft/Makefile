@@ -1,15 +1,16 @@
 CC=clang
 CFLAGS=-Wall -Wextra -Werror
+NAME=libft.a
 
-
-NAME:libft
-
-.PHONY: clean fclean re all
 
 all:
+
+.PHONY: clean
 
 clean:
 
 fclean:
 
 re:
+
+bonus:
